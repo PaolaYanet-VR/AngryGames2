@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "79jGZNPZf7T6Gwur01pXuCaSMnkegkLK3R8ahF8g34AczfQH2oYf0w0tvgBgiCUw8+nCh7UXmTEpzn+IfiSxnA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.iOS\\AppGas.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\franp\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
