@@ -10,8 +10,16 @@ C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Core\AppxManifest.xml
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\AppGas.UWP.build.appxrecipe
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\System.Runtime.dll
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\SQLite-net.dll
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\SQLitePCLRaw.core.dll
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\e_sqlite3.dll
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Microsoft.Graphics.Canvas.dll
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Microsoft.Graphics.Canvas.winmd
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Plugin.Media.dll
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Plugin.Media.pdb
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Xamarin.Essentials.dll
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Xamarin.Essentials.pdb
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Xamarin.Forms.Core.dll
@@ -21,6 +29,8 @@ C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Xamarin.Forms.Platform.dll
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Xamarin.Forms.Xaml.dll
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Xamarin.Forms.Maps.UWP.dll
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Xamarin.Forms.Maps.dll
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\AppGas.dll
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\AppGas.pdb
@@ -38,8 +48,10 @@ C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\obj\x86\Debug\AppGas.UWP.csproj.CoreCompileInputs.cache
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\obj\x86\Debug\AppGas.UWP.csproj.CopyComplete
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\obj\x86\Debug\Microsoft.UI.Xaml.pri.xml
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\obj\x86\Debug\Plugin.Media.pri.xml
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\obj\x86\Debug\Xamarin.Essentials.pri.xml
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
+C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\obj\x86\Debug\Xamarin.Forms.Maps.UWP.pri.xml
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\obj\x86\Debug\AppGas.UWP.exe
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\obj\x86\Debug\AppGas.UWP.pdb
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\obj\x86\Debug\ResourceHandlingTask.state

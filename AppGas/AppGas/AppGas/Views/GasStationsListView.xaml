@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGas.Views.GasStationsListView"
+             Title="AppGas">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New Gas Station" Command="{Binding NewCommand}" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <CollectionView
+                x:Name="GasStationsList"
+                ItemsSource="{Binding GasStationsList}"
+                SelectionChangedCommand="{Binding SelectCommand}"
+                SelectedItem="{Binding GasStationSelected}"
+                SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image
+                            Grid.RowSpan="3"
+                            HeightRequest="50"
+                            Source="{Binding Picture, Converter={StaticResource ImageConverter}}"/>
+                            <Label 
+                            Grid.Column="2"
+                            Grid.Row="1"
+                            FontAttributes="Bold"
+                            Text="{Binding Company}" />
+                            <Label
+                            Grid.Column="2"
+                            Grid.Row="2"
+                            Text="{Binding BranchOffice}" />   
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

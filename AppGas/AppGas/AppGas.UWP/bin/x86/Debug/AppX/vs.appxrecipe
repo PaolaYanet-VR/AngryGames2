@@ -30,21 +30,49 @@
     <AppXManifest Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-11T00:31:08.762</Modified>
+      <Modified>2021-05-11T01:37:04.958</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\AppGas.UWP.exe">
       <PackagePath>entrypoint\AppGas.UWP.exe</PackagePath>
-      <Modified>2021-05-11T00:31:04.989</Modified>
+      <Modified>2021-05-11T01:37:01.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2021-02-05T07:15:46.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\sqlite-net-pcl\1.7.335\lib\netstandard2.0\SQLite-net.dll">
+      <PackagePath>SQLite-net.dll</PackagePath>
+      <Modified>2020-05-16T07:38:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\sqlitepclraw.bundle_green\2.0.3\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2020-05-01T19:35:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\sqlitepclraw.core\2.0.3\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2020-05-01T19:35:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.0.3\runtimes\win10-x86\nativeassets\uap10.0\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2020-04-08T00:14:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.0.3\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2020-05-01T19:35:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2018-09-19T00:38:10.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\win2d.uwp\1.20.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2016-11-30T08:58:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\xam.plugin.media\5.0.1\lib\uap10.0.16299\Plugin.Media.dll">
+      <PackagePath>Plugin.Media.dll</PackagePath>
+      <Modified>2020-04-02T00:52:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\xamarin.essentials\1.6.1\lib\uap10.0.16299\Xamarin.Essentials.dll">
       <PackagePath>Xamarin.Essentials.dll</PackagePath>
@@ -66,9 +94,17 @@
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
       <Modified>2021-02-12T19:39:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\xamarin.forms.maps\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Maps.UWP.dll">
+      <PackagePath>Xamarin.Forms.Maps.UWP.dll</PackagePath>
+      <Modified>2021-02-12T19:39:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\xamarin.forms.maps\5.0.0.2012\lib\uap10.0.16299\Xamarin.Forms.Maps.dll">
+      <PackagePath>Xamarin.Forms.Maps.dll</PackagePath>
+      <Modified>2021-02-12T19:39:18.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.dll">
       <PackagePath>AppGas.dll</PackagePath>
-      <Modified>2021-05-11T00:30:58.697</Modified>
+      <Modified>2021-05-11T01:36:55.820</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -227,11 +263,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-05-11T00:31:04.908</Modified>
+      <Modified>2021-05-11T01:37:01.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-11T00:31:04.908</Modified>
+      <Modified>2021-05-11T01:37:01.899</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -247,11 +283,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-05-11T00:31:06.579</Modified>
+      <Modified>2021-05-11T01:37:02.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Core\AppGas.UWP.exe">
       <PackagePath>AppGas.UWP.exe</PackagePath>
-      <Modified>2021-05-11T00:31:08.755</Modified>
+      <Modified>2021-05-11T01:37:04.952</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

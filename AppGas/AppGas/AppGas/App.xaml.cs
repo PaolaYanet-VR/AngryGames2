@@ -1,6 +1,8 @@
-﻿using System;
+﻿using AppGas.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 
 namespace AppGas
 {
@@ -10,7 +12,7 @@ namespace AppGas
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new GasStationsListView();
         }
 
         protected override void OnStart()

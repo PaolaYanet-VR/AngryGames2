@@ -5,12 +5,12 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\15-dk0007la\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files (x86)\Microsoft\Xamarin\NuGet\;C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\franp\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files (x86)\Microsoft\Xamarin\NuGet\;C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.9.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\15-dk0007la\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\franp\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\" />
@@ -37,19 +37,19 @@
     <Import Project="$(NuGetPackageRoot)microsoft.netcore.universalwindowsplatform\6.2.12\build\Microsoft.NETCore.UniversalWindowsPlatform.props" Condition="Exists('$(NuGetPackageRoot)microsoft.netcore.universalwindowsplatform\6.2.12\build\Microsoft.NETCore.UniversalWindowsPlatform.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_UI_Xaml Condition=" '$(PkgMicrosoft_UI_Xaml)' == '' ">C:\Users\15-dk0007la\.nuget\packages\microsoft.ui.xaml\2.4.3</PkgMicrosoft_UI_Xaml>
-    <Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.12</Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk>
-    <Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00</Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary>
-    <Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.2.10-rel-29722-00</Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler>
-    <Pkgruntime_win10-x64_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-x64_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.12</Pkgruntime_win10-x64_Microsoft_Net_UWPCoreRuntimeSdk>
-    <Pkgruntime_win10-x64_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-x64_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00</Pkgruntime_win10-x64_Microsoft_Net_Native_SharedLibrary>
-    <Pkgruntime_win10-x64_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-x64_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.2.10-rel-29722-00</Pkgruntime_win10-x64_Microsoft_Net_Native_Compiler>
-    <Pkgruntime_win10-arm64_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-arm64_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00</Pkgruntime_win10-arm64_Microsoft_Net_Native_SharedLibrary>
-    <Pkgruntime_win10-arm64_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-arm64_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-arm64.microsoft.net.native.compiler\2.2.10-rel-29722-00</Pkgruntime_win10-arm64_Microsoft_Net_Native_Compiler>
-    <Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.12</Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk>
-    <Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00</Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary>
-    <Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\15-dk0007la\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.2.10-rel-29722-00</Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler>
-    <PkgMicrosoft_Net_UWPCoreRuntimeSdk Condition=" '$(PkgMicrosoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\15-dk0007la\.nuget\packages\microsoft.net.uwpcoreruntimesdk\2.2.12</PkgMicrosoft_Net_UWPCoreRuntimeSdk>
-    <PkgMicrosoft_Net_Native_Compiler Condition=" '$(PkgMicrosoft_Net_Native_Compiler)' == '' ">C:\Users\15-dk0007la\.nuget\packages\microsoft.net.native.compiler\2.2.10-rel-29722-00</PkgMicrosoft_Net_Native_Compiler>
+    <PkgMicrosoft_UI_Xaml Condition=" '$(PkgMicrosoft_UI_Xaml)' == '' ">C:\Users\franp\.nuget\packages\microsoft.ui.xaml\2.4.3</PkgMicrosoft_UI_Xaml>
+    <Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.12</Pkgruntime_win10-x86_Microsoft_Net_UWPCoreRuntimeSdk>
+    <Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00</Pkgruntime_win10-x86_Microsoft_Net_Native_SharedLibrary>
+    <Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.2.10-rel-29722-00</Pkgruntime_win10-x86_Microsoft_Net_Native_Compiler>
+    <Pkgruntime_win10-x64_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-x64_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.12</Pkgruntime_win10-x64_Microsoft_Net_UWPCoreRuntimeSdk>
+    <Pkgruntime_win10-x64_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-x64_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00</Pkgruntime_win10-x64_Microsoft_Net_Native_SharedLibrary>
+    <Pkgruntime_win10-x64_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-x64_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.2.10-rel-29722-00</Pkgruntime_win10-x64_Microsoft_Net_Native_Compiler>
+    <Pkgruntime_win10-arm64_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-arm64_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00</Pkgruntime_win10-arm64_Microsoft_Net_Native_SharedLibrary>
+    <Pkgruntime_win10-arm64_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-arm64_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-arm64.microsoft.net.native.compiler\2.2.10-rel-29722-00</Pkgruntime_win10-arm64_Microsoft_Net_Native_Compiler>
+    <Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.12</Pkgruntime_win10-arm_Microsoft_Net_UWPCoreRuntimeSdk>
+    <Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00</Pkgruntime_win10-arm_Microsoft_Net_Native_SharedLibrary>
+    <Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler Condition=" '$(Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler)' == '' ">C:\Users\franp\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.2.10-rel-29722-00</Pkgruntime_win10-arm_Microsoft_Net_Native_Compiler>
+    <PkgMicrosoft_Net_UWPCoreRuntimeSdk Condition=" '$(PkgMicrosoft_Net_UWPCoreRuntimeSdk)' == '' ">C:\Users\franp\.nuget\packages\microsoft.net.uwpcoreruntimesdk\2.2.12</PkgMicrosoft_Net_UWPCoreRuntimeSdk>
+    <PkgMicrosoft_Net_Native_Compiler Condition=" '$(PkgMicrosoft_Net_Native_Compiler)' == '' ">C:\Users\franp\.nuget\packages\microsoft.net.native.compiler\2.2.10-rel-29722-00</PkgMicrosoft_Net_Native_Compiler>
   </PropertyGroup>
 </Project>

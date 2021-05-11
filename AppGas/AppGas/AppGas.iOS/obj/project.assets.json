@@ -1644,22 +1644,23 @@
     "Xamarin.iOS,Version=v1.0": [
       "AppGas >= 1.0.0",
       "Xamarin.Essentials >= 1.6.1",
-      "Xamarin.Forms >= 5.0.0.2012"
+      "Xamarin.Forms >= 5.0.0.2012",
+      "sqlite-net-pcl >= 1.7.335"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\15-dk0007la\\.nuget\\packages\\": {},
+    "C:\\Users\\franp\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.iOS\\AppGas.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.iOS\\AppGas.iOS.csproj",
       "projectName": "AppGas.iOS",
-      "projectPath": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.iOS\\AppGas.iOS.csproj",
-      "packagesPath": "C:\\Users\\15-dk0007la\\.nuget\\packages\\",
-      "outputPath": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.iOS\\obj\\",
+      "projectPath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.iOS\\AppGas.iOS.csproj",
+      "packagesPath": "C:\\Users\\franp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1667,7 +1668,7 @@
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\15-dk0007la\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\franp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -1682,8 +1683,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj": {
-              "projectPath": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj"
+            "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj": {
+              "projectPath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj"
             }
           }
         }
@@ -1699,6 +1700,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2012, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.7.335, )"
           }
         }
       }
