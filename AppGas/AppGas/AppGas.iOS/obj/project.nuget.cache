@@ -1,10 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "79jGZNPZf7T6Gwur01pXuCaSMnkegkLK3R8ahF8g34AczfQH2oYf0w0tvgBgiCUw8+nCh7UXmTEpzn+IfiSxnA==",
+  "dgSpecHash": "xGQZ95fsmaHj7Tuk2OOnrCB8UzLNnGsRG1ThuAuMJiHgLqVxF/w6B+iqGYUJBpwqfIiH5LmdML7JdUa9gSuoPA==",
   "success": true,
   "projectFilePath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.iOS\\AppGas.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\franp\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\franp\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\franp\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\franp\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

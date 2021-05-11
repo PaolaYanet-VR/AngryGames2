@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g72mUza1CbfrD+CDjbJDVte50Kbk3LEhbY6Sv8r5p7aW1WnGq+PKfWgwFOtTeJdgNzP1ZQmvsL6eL4eq8KLrmw==",
+  "dgSpecHash": "E4iUT4FfXk+I1vIce901DAxaRp4y8/DwoVA6/xpULfRUJOOuAKnNXT2+XSUdvLsDLCSpjUQInb+ex/UR/dtgyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\AppGas.UWP.csproj",
   "expectedPackageFiles": [
@@ -28,7 +28,15 @@
     "C:\\Users\\franp\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.8-rel-29722-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.8-rel-29722-00.nupkg.sha512",
     "C:\\Users\\franp\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.12\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
     "C:\\Users\\franp\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.12\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.3\\sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\franp\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
+    "C:\\Users\\franp\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\franp\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\franp\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
