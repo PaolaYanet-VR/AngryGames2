@@ -14,18 +14,18 @@ namespace AppGas.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GasStationDetailView : ContentPage
     {
-        public GasStationDetailView()
+        public GasStationDetailView(GasStationsListViewModel gasStationsListViewModel)
         {
             InitializeComponent();
 
-            BindingContext = new GasStationDetailViewModel();
+            BindingContext = new GasStationDetailViewModel(gasStationsListViewModel);
         }
 
-        public GasStationDetailView(GasStationModel gasStationSelected)
+        public GasStationDetailView(GasStationsListViewModel gasStationsListViewModel, GasStationModel gasStation)
         {
             InitializeComponent();
 
-            BindingContext = new GasStationDetailViewModel(gasStationSelected);
+            BindingContext = new GasStationDetailViewModel(gasStationsListViewModel, gasStation);
         }
     }
 }

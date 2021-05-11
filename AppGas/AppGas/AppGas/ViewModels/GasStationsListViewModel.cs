@@ -54,12 +54,12 @@ namespace AppGas.ViewModels
 
         private void NewAction()
         {
-            Application.Current.MainPage.Navigation.PushAsync(new GasStationDetailView());
+            Application.Current.MainPage.Navigation.PushAsync(new GasStationDetailView(this));
         }
 
         private void SelectAction()
         {
-            Application.Current.MainPage.Navigation.PushAsync(new GasStationDetailView(gasStationSelected));
+            Application.Current.MainPage.Navigation.PushAsync(new GasStationDetailView(this, gasStationSelected));
         }
     }
 }

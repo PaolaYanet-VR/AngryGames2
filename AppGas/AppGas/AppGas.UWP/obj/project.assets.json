@@ -10220,7 +10220,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\franp\\.nuget\\packages\\": {},
+    "C:\\Users\\15-dk0007la\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
@@ -10228,11 +10228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\AppGas.UWP.csproj",
+      "projectUniqueName": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\AppGas.UWP.csproj",
       "projectName": "AppGas.UWP",
-      "projectPath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\AppGas.UWP.csproj",
-      "packagesPath": "C:\\Users\\franp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\obj\\",
+      "projectPath": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\AppGas.UWP.csproj",
+      "packagesPath": "C:\\Users\\15-dk0007la\\.nuget\\packages\\",
+      "outputPath": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10241,7 +10241,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\franp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\15-dk0007la\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -10256,8 +10256,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj": {
-              "projectPath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj"
+            "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj": {
+              "projectPath": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj"
             }
           }
         }

@@ -2,18 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGas.Views.GasStationDetailView"
+             xmlns:triggers="clr-namespace:AppGas.Triggers"
              xmlns:converters="clr-namespace:AppGas.Converters"
              Title="Gas Station Detail">
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:ImageConverter x:Key="ImageConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Delete" Command="{Binding DeleteCommand}"/>
         <ToolbarItem Text="Save" Command="{Binding SaveCommand}"/>
         <ToolbarItem Text="Map" Command="{Binding MapCommand}"/>
     </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <ScrollView>
             <StackLayout
@@ -22,38 +26,66 @@
                 <Label
                     Text="Company's name" />
                 <Entry 
-                    Text="{Binding GasStationSelected.Company}" />
+                    Text="{Binding GasStationCompany}" />
                 <Label
                     Text="Branch Office" />
                 <Entry 
-                    Text="{Binding GasStationSelected.BranchOffice}" />
+                    Text="{Binding GasStationBranchOffice}" />
+                
                 <Label
                     Text="Price per liter of green gas" />
                 <Entry 
-                    Keyboard="Numeric"
-                    Text="{Binding GasStationSelected.GreenPrice}" />
+                    Keyboard="Numeric" 
+                    Text="{Binding GasStationGreenPrice}" >
+                    <Entry.Triggers>
+                        <EventTrigger 
+                            Event="TextChanged">
+                            <triggers:PriceTrigger />
+                        </EventTrigger>
+                    </Entry.Triggers>
+                </Entry>
                 <Stepper
                     Increment="1"
                     Minimum="0"
-                    Value="{Binding GasStationSelected.GreenPrice}"/>
+                    Maximum="1000"
+                    Value="{Binding GasStationGreenPrice}"/>
+                
                 <Label
                     Text="Price per liter of red gas" />
                 <Entry 
-                    Keyboard="Numeric"
-                    Text="{Binding GasStationSelected.RedPrice}" />
+                    Keyboard="Numeric" 
+                    Text="{Binding GasStationRedPrice}" >
+                    <Entry.Triggers>
+                        <EventTrigger 
+                            Event="TextChanged">
+                            <triggers:PriceTrigger />
+                        </EventTrigger>
+                    </Entry.Triggers>
+                </Entry>
                 <Stepper
                     Increment="1"
                     Minimum="0"
-                    Value="{Binding GasStationSelected.RedPrice}"/>
+                    Maximum="1000"
+                    Value="{Binding GasStationRedPrice}"/>
+                
                 <Label
                     Text="Price per liter of diesel" />
                 <Entry 
-                    Keyboard="Numeric"
-                    Text="{Binding GasStationSelected.DieselPrice}" />
+                    Keyboard="Numeric" 
+                    Text="{Binding GasStationDieselPrice}" >
+                    <Entry.Triggers>
+                        <EventTrigger 
+                            Event="TextChanged">
+                            <triggers:PriceTrigger />
+                        </EventTrigger>
+                    </Entry.Triggers>
+                </Entry>
                 <Stepper
                     Increment="1"
                     Minimum="0"
-                    Value="{Binding GasStationSelected.DieselPrice}"/>
+                    Maximum="1000"
+                    Value="{Binding GasStationDieselPrice}"/>
+                
                 <Entry
                     Placeholder="Latitude"
                     Text="{Binding GasStationLatitude}" />
@@ -70,7 +102,7 @@
                     Text="Select picture"
                     Command="{Binding SelectPictureCommand}" />
                 <Image
-                    Source="{Binding ImageBase64, Converter={StaticResource ImageConverter}}"
+                    Source="{Binding GasStationPicture, Converter={StaticResource ImageConverter}}"
                     WidthRequest="100" />
             </StackLayout>
         </ScrollView>

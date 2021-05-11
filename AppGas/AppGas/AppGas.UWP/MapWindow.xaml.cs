@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // La plantilla de elemento Control de usuario está documentada en https://go.microsoft.com/fwlink/?LinkId=234236
@@ -23,6 +24,10 @@ namespace AppGas.UWP
         public MapWindow(GasStationModel gasStation)
         {
             this.InitializeComponent();
+
+            WindowPicture.Source = new BitmapImage(new Uri(gasStation.Picture));
+            WindowBranchOffice.Text = gasStation.BranchOffice;
+            WindowCompany.Text = gasStation.Company;
         }
     }
 }

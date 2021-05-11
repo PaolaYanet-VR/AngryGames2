@@ -14,3 +14,19 @@ C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\ref\AppGas.dll
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.pdb
 C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\Views\GasStationsMapsView.xaml.g.cs
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.deps.json
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.dll
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\ref\AppGas.dll
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.pdb
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.csprojAssemblyReference.cache
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\Views\GasStationDetailView.xaml.g.cs
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\Views\GasStationsListView.xaml.g.cs
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\Views\GasStationsMapsView.xaml.g.cs
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.AssemblyInfoInputs.cache
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.AssemblyInfo.cs
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.csproj.CoreCompileInputs.cache
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\XamlC.stamp
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.dll
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\ref\AppGas.dll
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.pdb

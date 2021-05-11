@@ -6,7 +6,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Devices.Geolocation;
+using Windows.Storage.Streams;
 using Windows.UI.Xaml.Controls.Maps;
+using Xamarin.Forms.Maps;
 using Xamarin.Forms.Maps.UWP;
 using Xamarin.Forms.Platform.UWP;
 
@@ -17,8 +20,8 @@ namespace AppGas.UWP.Renders
     {
         MapControl NativeMap;
         GasStationModel GasStation;
-        MapWindow PetWindow;
-        bool IsPetWindowVisible = false;
+        MapWindow GasStationWindow;
+        bool IsGasStationWindowVisible = false;
 
         protected override void OnElementChanged(ElementChangedEventArgs<Map> e)
         {
@@ -29,12 +32,12 @@ namespace AppGas.UWP.Renders
                 NativeMap.MapElementClick -= OnMapElementClick;
                 NativeMap.Children.Clear();
                 NativeMap = null;
-                PetWindow = null;
+                GasStationWindow = null;
             }
 
             if (e.NewElement != null)
             {
-                this.Pet = (e.NewElement as MyMap).Pet;
+                this.GasStation = (e.NewElement as MyMap).GasStation;
 
                 var formsMap = (MyMap)e.NewElement;
                 NativeMap = Control as MapControl;
@@ -43,8 +46,8 @@ namespace AppGas.UWP.Renders
 
                 var position = new BasicGeoposition
                 {
-                    Latitude = Pet.Latitude,
-                    Longitude = Pet.Longitude
+                    Latitude = GasStation.Latitude,
+                    Longitude = GasStation.Longitude
                 };
                 var point = new Geopoint(position);
 
@@ -64,27 +67,27 @@ namespace AppGas.UWP.Renders
             var mapIcon = args.MapElements.FirstOrDefault(x => x is MapIcon) as MapIcon;
             if (mapIcon != null)
             {
-                if (!IsPetWindowVisible)
+                if (!IsGasStationWindowVisible)
                 {
-                    if (PetWindow == null) PetWindow = new MapWindow(Pet);
+                    if (GasStationWindow == null) GasStationWindow = new MapWindow(GasStation);
 
                     var position = new BasicGeoposition
                     {
-                        Latitude = Pet.Latitude,
-                        Longitude = Pet.Longitude
+                        Latitude = GasStation.Latitude,
+                        Longitude = GasStation.Longitude
                     };
                     var point = new Geopoint(position);
 
-                    NativeMap.Children.Add(PetWindow);
-                    MapControl.SetLocation(PetWindow, point);
-                    MapControl.SetNormalizedAnchorPoint(PetWindow, new Windows.Foundation.Point(0.5, 1.0));
+                    NativeMap.Children.Add(GasStationWindow);
+                    MapControl.SetLocation(GasStationWindow, point);
+                    MapControl.SetNormalizedAnchorPoint(GasStationWindow, new Windows.Foundation.Point(0.5, 1.0));
 
-                    IsPetWindowVisible = true;
+                    IsGasStationWindowVisible = true;
                 }
                 else
                 {
-                    NativeMap.Children.Remove(PetWindow);
-                    IsPetWindowVisible = false;
+                    NativeMap.Children.Remove(GasStationWindow);
+                    IsGasStationWindowVisible = false;
                 }
             }
         }

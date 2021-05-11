@@ -1,1 +1,1 @@
-C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\AppGas.UWP.csproj;x86
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\AppGas.UWP.csproj;x86

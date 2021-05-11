@@ -1,5 +1,6 @@
 ﻿using AppGas.Models;
 using AppGas.Services;
+using AppGas.Views;
 using Plugin.Media;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,8 @@ namespace AppGas.ViewModels
 {
     public class GasStationDetailViewModel : BaseViewModel
     {
+        GasStationsListViewModel GasStationsListViewModel;
+
         Command takePictureCommand;
         public Command TakePictureCommand => takePictureCommand ?? (takePictureCommand = new Command(TakePictureAction));
 
@@ -26,11 +29,51 @@ namespace AppGas.ViewModels
         Command getLocationCommand;
         public Command GetLocationCommand => getLocationCommand ?? (getLocationCommand = new Command(GetLocationAction));
 
-        string imageBase64;
-        public string ImageBase64
+        Command _MapCommand;
+        public Command MapCommand => _MapCommand ?? (_MapCommand = new Command(MapAction));
+
+        int gasStationID;
+
+        string gasStationCompany;
+        public string GasStationCompany
         {
-            get => imageBase64;
-            set => SetProperty(ref imageBase64, value);
+            get => gasStationCompany;
+            set => SetProperty(ref gasStationCompany, value);
+        }
+
+        string gasStationBranchOffice;
+        public string GasStationBranchOffice
+        {
+            get => gasStationBranchOffice;
+            set => SetProperty(ref gasStationBranchOffice, value);
+        }
+
+        string gasStationPicture;
+        public string GasStationPicture
+        {
+            get => gasStationPicture;
+            set => SetProperty(ref gasStationPicture, value);
+        }
+
+        double gasStationGreenPrice;
+        public double GasStationGreenPrice
+        {
+            get => gasStationGreenPrice;
+            set => SetProperty(ref gasStationGreenPrice, value);
+        }
+
+        double gasStationRedPrice;
+        public double GasStationRedPrice
+        {
+            get => gasStationRedPrice;
+            set => SetProperty(ref gasStationRedPrice, value);
+        }
+
+        double gasStationDieselPrice;
+        public double GasStationDieselPrice
+        {
+            get => gasStationDieselPrice;
+            set => SetProperty(ref gasStationDieselPrice, value);
         }
 
         double gasStationLatitude;
@@ -47,6 +90,13 @@ namespace AppGas.ViewModels
             set => SetProperty(ref gasStationLongitude, value);
         }
 
+        string imageBase64;
+        public string ImageBase64
+        {
+            get => imageBase64;
+            set => SetProperty(ref imageBase64, value);
+        }
+
         GasStationModel gasStationSelected;
         public GasStationModel GasStationSelected
         {
@@ -54,17 +104,112 @@ namespace AppGas.ViewModels
             set => SetProperty(ref gasStationSelected, value);
         }
 
-        public GasStationDetailViewModel()
+        // Constructors
+        public GasStationDetailViewModel(GasStationsListViewModel gasStationsListViewModel)
         {
-            GasStationSelected = new GasStationModel();
+            GasStationsListViewModel = gasStationsListViewModel;
         }
 
-        public GasStationDetailViewModel(GasStationModel gasStationSelected)
+        public GasStationDetailViewModel(GasStationsListViewModel gasStationsListViewModel, GasStationModel gasStation)
         {
-            GasStationSelected = gasStationSelected;
-            ImageBase64 = gasStationSelected.Picture;
-            GasStationLatitude = gasStationSelected.Latitude;
-            GasStationLongitude = gasStationSelected.Longitude;
+            GasStationsListViewModel = gasStationsListViewModel;
+
+            ImageBase64 = gasStation.Picture;
+
+            //Pet = pet;
+            gasStationID = gasStation.ID;
+            GasStationCompany = gasStation.Company;
+            GasStationBranchOffice = gasStation.BranchOffice;
+            GasStationPicture = gasStation.Picture;
+            GasStationGreenPrice = gasStation.GreenPrice;
+            GasStationRedPrice = gasStation.RedPrice;
+            GasStationDieselPrice = gasStation.DieselPrice;
+            GasStationLatitude = gasStation.Latitude;
+            GasStationLongitude = gasStation.Longitude;
+        }
+
+        // Actions
+        private async void SaveAction()
+        {
+            GasStationModel gasStation = new GasStationModel
+            {
+                ID = gasStationID,
+                Company = gasStationCompany,
+                BranchOffice = gasStationBranchOffice,
+                Picture = gasStationPicture,
+                GreenPrice = gasStationGreenPrice,
+                RedPrice = gasStationRedPrice,
+                DieselPrice = gasStationDieselPrice,
+                Latitude = gasStationLatitude,
+                Longitude = gasStationLongitude
+            };
+
+            //guardamos la tarea en sqlite
+            await App.SQLiteDatabase.SaveGasStationAsync(gasStation);
+            //refrescamos el listado de las tareas
+            GasStationsListViewModel.GetInstance().LoadGasStations();
+            //cerramos la página actual
+            await Application.Current.MainPage.Navigation.PopAsync();
+        }
+
+        private async void DeleteAction()
+        {
+            GasStationModel gasStation = new GasStationModel
+            {
+                ID = gasStationID,
+                Company = gasStationCompany,
+                BranchOffice = gasStationBranchOffice,
+                Picture = gasStationPicture,
+                GreenPrice = gasStationGreenPrice,
+                RedPrice = gasStationRedPrice,
+                DieselPrice = gasStationDieselPrice,
+                Latitude = gasStationLatitude,
+                Longitude = gasStationLongitude
+            };
+
+            //eliminamos la tarea acutal en SQLite
+            await App.SQLiteDatabase.DeleteGasStationAsync(gasStation);
+            //refrescamos el listado de las tareas
+            GasStationsListViewModel.GetInstance().LoadGasStations();
+            //cerramos la página actual
+            await Application.Current.MainPage.Navigation.PopAsync();
+        }
+
+        private async void GetLocationAction()
+        {
+            try
+            {
+                GasStationLatitude = GasStationLongitude = 0;
+                var location = await Geolocation.GetLastKnownLocationAsync();
+
+                if (location != null)
+                {
+                    //Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
+                    GasStationLatitude = location.Latitude;
+                    GasStationLongitude = location.Longitude;
+                }
+            }
+            catch (FeatureNotSupportedException fnsEx)
+            {
+                // Handle not supported on device exception
+                await Application.Current.MainPage.DisplayAlert("AppGas", $"El GPS no está soportado en el dispositivo ({ fnsEx.Message })", "Ok");
+            }
+            catch (FeatureNotEnabledException fneEx)
+            {
+                // Handle not enabled on device exception
+                await Application.Current.MainPage.DisplayAlert("AppGas", $"El GPS no está activado en el dispositivo ({ fneEx.Message })", "Ok");
+
+            }
+            catch (PermissionException pEx)
+            {
+                // Handle permission exception
+                await Application.Current.MainPage.DisplayAlert("AppGas", $"No se pudo obtener el permiso para las coordenadas ({ pEx.Message })", "Ok");
+            }
+            catch (Exception ex)
+            {
+                // Unable to get location
+                await Application.Current.MainPage.DisplayAlert("AppGas", $"Se generó un error al obtener las coordenadas del dispositivo ({ ex.Message })", "Ok");
+            }
         }
 
         private async void TakePictureAction()
@@ -88,8 +233,7 @@ namespace AppGas.ViewModels
                 if (file == null)
                     return;
 
-                ImageBase64 = await new ImageService().ConvertImageFilePathToBase64(file.Path);
-                gasStationSelected.Picture = ImageBase64;
+                GasStationPicture = await new ImageService().ConvertImageFilePathToBase64(file.Path);
 
             }
             catch (Exception ex)
@@ -119,8 +263,7 @@ namespace AppGas.ViewModels
                 if (file == null)
                     return;
 
-                ImageBase64 = await new ImageService().ConvertImageFilePathToBase64(file.Path);
-                gasStationSelected.Picture = ImageBase64;
+                GasStationPicture = await new ImageService().ConvertImageFilePathToBase64(file.Path);
 
             }
             catch (Exception ex)
@@ -130,63 +273,22 @@ namespace AppGas.ViewModels
             
         }
 
-        private async void SaveAction()
+        private void MapAction()
         {
-            //guardamos la tarea en sqlite
-            await App.SQLiteDatabase.SaveGasStationAsync(gasStationSelected);
-            //refrescamos el listado de las tareas
-            GasStationsListViewModel.GetInstance().LoadGasStations();
-            //cerramos la página actual
-            await Application.Current.MainPage.Navigation.PopAsync();
-        }
-
-        private async void DeleteAction()
-        {
-            //eliminamos la tarea acutal en SQLite
-            await App.SQLiteDatabase.DeleteGasStationAsync(gasStationSelected);
-            //refrescamos el listado de las tareas
-            GasStationsListViewModel.GetInstance().LoadGasStations();
-            //cerramos la página actual
-            await Application.Current.MainPage.Navigation.PopAsync();
-        }
-
-        private async void GetLocationAction()
-        {
-            try
-            {
-                GasStationSelected.Latitude = GasStationSelected.Longitude = 0;
-                var location = await Geolocation.GetLastKnownLocationAsync();
-
-                if (location != null)
+            Application.Current.MainPage.Navigation.PushAsync(
+                new GasStationsMapsView(new GasStationModel 
                 {
-                    //Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
-                    GasStationSelected.Latitude = location.Latitude;
-                    GasStationSelected.Longitude = location.Longitude;
-                }
-                GasStationLatitude = location.Latitude;
-                GasStationLongitude = location.Longitude;
-            }
-            catch (FeatureNotSupportedException fnsEx)
-            {
-                // Handle not supported on device exception
-                await Application.Current.MainPage.DisplayAlert("AppGas", $"El GPS no está soportado en el dispositivo ({ fnsEx.Message })", "Ok");
-            }
-            catch (FeatureNotEnabledException fneEx)
-            {
-                // Handle not enabled on device exception
-                await Application.Current.MainPage.DisplayAlert("AppGas", $"El GPS no está activado en el dispositivo ({ fneEx.Message })", "Ok");
-
-            }
-            catch (PermissionException pEx)
-            {
-                // Handle permission exception
-                await Application.Current.MainPage.DisplayAlert("AppGas", $"No se pudo obtener el permiso para las coordenadas ({ pEx.Message })", "Ok");
-            }
-            catch (Exception ex)
-            {
-                // Unable to get location
-                await Application.Current.MainPage.DisplayAlert("AppGas", $"Se generó un error al obtener las coordenadas del dispositivo ({ ex.Message })", "Ok");
-            }
+                    ID = gasStationID,
+                    Company = gasStationCompany,
+                    BranchOffice = gasStationBranchOffice,
+                    Picture = gasStationPicture,
+                    GreenPrice = gasStationGreenPrice,
+                    RedPrice = gasStationRedPrice,
+                    DieselPrice = gasStationDieselPrice,
+                    Latitude = gasStationLatitude,
+                    Longitude = gasStationLongitude
+                })
+            );
         }
     }
 }
