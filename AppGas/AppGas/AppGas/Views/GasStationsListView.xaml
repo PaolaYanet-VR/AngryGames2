@@ -2,7 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGas.Views.GasStationsListView"
+             xmlns:converters="clr-namespace:AppGas.Converters"
              Title="AppGas">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="ImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="New Gas Station" Command="{Binding NewCommand}" />
     </ContentPage.ToolbarItems>
@@ -10,7 +16,7 @@
         <StackLayout>
             <CollectionView
                 x:Name="GasStationsList"
-                ItemsSource="{Binding GasStationsList}"
+                ItemsSource="{Binding GasStations}"
                 SelectionChangedCommand="{Binding SelectCommand}"
                 SelectedItem="{Binding GasStationSelected}"
                 SelectionMode="Single">

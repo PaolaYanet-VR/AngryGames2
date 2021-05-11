@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>F5BF06C2A7EA4C8F2ADF4B6F179CDD9E66000ACCB6712A245003CB6BD9497AD9</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>1CF7389E33456FAA1E08370B5FB5C07AADC5D3023641CBC35B83C3C3145CC81E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>da2c3084-53b4-4521-8e74-55f4f3643c84_1.0.0.0_x86__etd0kavm828aa</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>da2c3084-53b4-4521-8e74-55f4f3643c84_etd0kavm828aa!App</RegisteredUserModeAppID>
     <RegisteredPackageID>da2c3084-53b4-4521-8e74-55f4f3643c84</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-11T01:37:04.958</Modified>
+      <Modified>2021-05-11T15:11:37.740</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\AppGas.UWP.exe">
       <PackagePath>entrypoint\AppGas.UWP.exe</PackagePath>
-      <Modified>2021-05-11T01:37:01.972</Modified>
+      <Modified>2021-05-11T15:11:35.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -104,7 +104,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.dll">
       <PackagePath>AppGas.dll</PackagePath>
-      <Modified>2021-05-11T01:36:55.820</Modified>
+      <Modified>2021-05-11T15:11:28.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -263,11 +263,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-05-11T01:37:01.898</Modified>
+      <Modified>2021-05-11T15:11:35.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-11T01:37:01.899</Modified>
+      <Modified>2021-05-11T15:11:35.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -283,11 +283,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-05-11T01:37:02.705</Modified>
+      <Modified>2021-05-11T15:11:36.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\franp\OneDrive\Documentos\universidad\4 sem\aplicaciones empresariales\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Core\AppGas.UWP.exe">
       <PackagePath>AppGas.UWP.exe</PackagePath>
-      <Modified>2021-05-11T01:37:04.952</Modified>
+      <Modified>2021-05-11T15:11:37.733</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,11 +1,14 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace AppGas.Models
 {
+    [Table("GasStation")]
     public class GasStationModel
     {
+        [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         public string Company { get; set; }
         public string BranchOffice { get; set; }

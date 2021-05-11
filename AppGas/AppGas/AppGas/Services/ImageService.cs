@@ -11,31 +11,25 @@ namespace AppGas.Services
     {
         public ImageSource ConvertImageFromBase64ToImageSource(string imageBase64)
         {
+            // Convierte una imagen en formato base 64 a un formato binario una imagen para poder ser visualizada
             if (!string.IsNullOrEmpty(imageBase64))
             {
-                try
-                {
-                    return ImageSource.FromStream(() =>
-                        new MemoryStream(System.Convert.FromBase64String(imageBase64))
+                return ImageSource.FromStream(() =>
+                    new MemoryStream(System.Convert.FromBase64String(imageBase64))
                     );
-                }
-                catch
-                {
-                    return null;
-                }
             }
             else
             {
-                return null; // TODO: Enviar imagen de not_found
+                return null; // TODO: enviar imagen de not_found
             }
         }
 
-        //  Convierte una imagen desde el archivo a texto
-        public async Task<string> ConvertImageFilePathToBase64(string filePath)
+        public async Task<string> ConvertImageFilePathToBase64(string filepath)
         {
-            if (!string.IsNullOrEmpty(filePath))
+
+            if (!string.IsNullOrEmpty(filepath))
             {
-                FileStream stream = File.Open(filePath, FileMode.Open);
+                FileStream stream = File.Open(filepath, FileMode.Open);
                 byte[] bytes = new byte[stream.Length];
                 await stream.ReadAsync(bytes, 0, (int)stream.Length);
                 return System.Convert.ToBase64String(bytes);

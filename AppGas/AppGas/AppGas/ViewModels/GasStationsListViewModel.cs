@@ -49,7 +49,7 @@ namespace AppGas.ViewModels
 
         public async void LoadGasStations()
         {
-            GasStations = await App.SQLiteDatabase.GetAllTasksAsync();
+            GasStations = await App.SQLiteDatabase.GetAllGasStationsAsync();
         }
 
         private void NewAction()

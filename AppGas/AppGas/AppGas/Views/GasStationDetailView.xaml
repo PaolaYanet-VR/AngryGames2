@@ -1,12 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppGas.Views.GasStationDetailView">
+             x:Class="AppGas.Views.GasStationDetailView"
+             xmlns:converters="clr-namespace:AppGas.Converters"
+             Title="Gas Station Detail">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="ImageConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Delete" Command="{Binding DeleteCommand}"/>
+        <ToolbarItem Text="Save" Command="{Binding SaveCommand}"/>
+        <ToolbarItem Text="Map" Command="{Binding MapCommand}"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout
+                Margin="20"
+                VerticalOptions="StartAndExpand">
+                <Label
+                    Text="Company's name" />
+                <Entry 
+                    Text="{Binding GasStationSelected.Company}" />
+                <Label
+                    Text="Branch Office" />
+                <Entry 
+                    Text="{Binding GasStationSelected.BranchOffice}" />
+                <Label
+                    Text="Price per liter of green gas" />
+                <Entry 
+                    Keyboard="Numeric"
+                    Text="{Binding GasStationSelected.GreenPrice}" />
+                <Stepper
+                    Increment="1"
+                    Minimum="0"
+                    Value="{Binding GasStationSelected.GreenPrice}"/>
+                <Label
+                    Text="Price per liter of red gas" />
+                <Entry 
+                    Keyboard="Numeric"
+                    Text="{Binding GasStationSelected.RedPrice}" />
+                <Stepper
+                    Increment="1"
+                    Minimum="0"
+                    Value="{Binding GasStationSelected.RedPrice}"/>
+                <Label
+                    Text="Price per liter of diesel" />
+                <Entry 
+                    Keyboard="Numeric"
+                    Text="{Binding GasStationSelected.DieselPrice}" />
+                <Stepper
+                    Increment="1"
+                    Minimum="0"
+                    Value="{Binding GasStationSelected.DieselPrice}"/>
+                <Entry
+                    Placeholder="Latitude"
+                    Text="{Binding GasStationLatitude}" />
+                <Entry 
+                    Placeholder="Longitude"
+                    Text="{Binding GasStationLongitude}" />
+                <Button
+                    Text="Obtain coordinates"
+                    Command="{Binding GetLocationCommand}" />
+                <Button
+                    Text="Take picture"
+                    Command="{Binding TakePictureCommand}" />
+                <Button
+                    Text="Select picture"
+                    Command="{Binding SelectPictureCommand}" />
+                <Image
+                    Source="{Binding ImageBase64, Converter={StaticResource ImageConverter}}"
+                    WidthRequest="100" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
