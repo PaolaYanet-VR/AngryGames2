@@ -532,6 +532,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2012": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "AppGas/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -539,6 +553,7 @@
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.Maps": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1185,6 +1200,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2012": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "AppGas/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1192,6 +1221,7 @@
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.Maps": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -1839,6 +1869,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2012": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "AppGas/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1846,6 +1890,7 @@
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.Maps": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -2490,6 +2535,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2012": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "AppGas/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2497,6 +2556,7 @@
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.Maps": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -3143,6 +3203,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2012": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "AppGas/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3150,6 +3224,7 @@
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.Maps": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -3797,6 +3872,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2012": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "AppGas/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3804,6 +3893,7 @@
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.Maps": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -4450,6 +4540,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2012": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "AppGas/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4457,6 +4561,7 @@
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.Maps": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -5104,6 +5209,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Maps/5.0.0.2012": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll": {},
+          "lib/uap10.0.16299/Xamarin.Forms.Maps.dll": {}
+        }
+      },
       "AppGas/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -5111,6 +5230,7 @@
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.Maps": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
         },
         "compile": {
@@ -10050,6 +10170,40 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Maps/5.0.0.2012": {
+      "sha512": "Zq1mv6sybHzQYWcOYOuLDV1LWQiioGN6kmleau7frhkVLf68FSXd/GIq4uA92TIOYMW9MxmZKOSBW8VVPis5pQ==",
+      "type": "package",
+      "path": "xamarin.forms.maps/5.0.0.2012",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Maps.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Maps.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Maps.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Maps.xml",
+        "lib/tizen40/Xamarin.Forms.Maps.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.dll",
+        "lib/tizen40/Xamarin.Forms.Maps.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Maps.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
+        "xamarin.forms.maps.5.0.0.2012.nupkg.sha512",
+        "xamarin.forms.maps.nuspec"
+      ]
+    },
     "AppGas/1.0.0": {
       "type": "project",
       "path": "../AppGas/AppGas.csproj",
@@ -10065,7 +10219,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\franp\\.nuget\\packages\\": {},
+    "C:\\Users\\15-dk0007la\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
@@ -10073,11 +10227,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\AppGas.UWP.csproj",
+      "projectUniqueName": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\AppGas.UWP.csproj",
       "projectName": "AppGas.UWP",
-      "projectPath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\AppGas.UWP.csproj",
-      "packagesPath": "C:\\Users\\franp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\obj\\",
+      "projectPath": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\AppGas.UWP.csproj",
+      "packagesPath": "C:\\Users\\15-dk0007la\\.nuget\\packages\\",
+      "outputPath": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10086,7 +10240,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\franp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\15-dk0007la\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -10101,8 +10255,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj": {
-              "projectPath": "C:\\Users\\franp\\OneDrive\\Documentos\\universidad\\4 sem\\aplicaciones empresariales\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj"
+            "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj": {
+              "projectPath": "D:\\ProyectoXamarinForms\\AppGas\\AppGas\\AppGas\\AppGas.csproj"
             }
           }
         }
