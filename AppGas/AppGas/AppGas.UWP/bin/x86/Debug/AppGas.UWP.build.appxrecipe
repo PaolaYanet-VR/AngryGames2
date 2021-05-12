@@ -199,6 +199,9 @@
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\pin.png">
       <PackagePath>pin.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\notFound.jpg">
+      <PackagePath>notFound.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>

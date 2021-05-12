@@ -18,7 +18,6 @@ D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.dep
 D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.dll
 D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\ref\AppGas.dll
 D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.pdb
-D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.csprojAssemblyReference.cache
 D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\Views\GasStationDetailView.xaml.g.cs
 D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\Views\GasStationsListView.xaml.g.cs
@@ -30,3 +29,4 @@ D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\XamlC.stam
 D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.dll
 D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\ref\AppGas.dll
 D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.pdb
+D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\obj\Debug\netstandard2.0\AppGas.csprojAssemblyReference.cache

@@ -13,126 +13,236 @@
     </ContentPage.Resources>
     
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Delete" Command="{Binding DeleteCommand}"/>
-        <ToolbarItem Text="Save" Command="{Binding SaveCommand}"/>
-        <ToolbarItem Text="Map" Command="{Binding MapCommand}"/>
+        <ToolbarItem Text="❌ Delete" Command="{Binding DeleteCommand}"/>
+        <ToolbarItem Text="✔️ Save" Command="{Binding SaveCommand}"/>
+        <ToolbarItem Text="📍 Map" Command="{Binding MapCommand}"/>
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
         <ScrollView>
             <StackLayout
-                Margin="20"
+                Margin="50"
                 VerticalOptions="StartAndExpand">
-                <Label
-                    Text="Company's name" />
-                <Entry 
-                    Text="{Binding GasStationCompany}" />
-                <Label
-                    Text="Branch Office" />
-                <Entry 
-                    Text="{Binding GasStationBranchOffice}" />
 
                 <Grid>
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    
+                    <Frame
+                        Margin="0"
+                        CornerRadius="30"
+                        IsClippedToBounds="True">
+                        <Image
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Aspect="AspectFill"
+                            Margin="-15"
+                            Source="{Binding GasStationPicture, Converter={StaticResource ImageConverter}}"
+                            WidthRequest="400" />
+                    </Frame>
+                    <Button
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Text="📸 Take picture"
+                        BackgroundColor="#656396"
+                        Command="{Binding TakePictureCommand}" />
+                    <Button
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Text="📷 Select picture"
+                        BackgroundColor="#656396"
+                        Command="{Binding SelectPictureCommand}" />
+
+                    <Grid
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Padding="50,0,50,0"
+                        >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            VerticalOptions="End"
+                            FontSize="20"
+                            FontFamily="MS Gothic"
+                            Text="Company's name" />
+                        <Entry 
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Text="{Binding GasStationCompany}" />
+                        <Label
+                            FontSize="20"
+                            FontFamily="MS Gothic"
+                            VerticalOptions="End"
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            Text="Branch Office" />
+                        <Entry 
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            Text="{Binding GasStationBranchOffice}" />
+                    </Grid>
+                </Grid>
+
+
+                
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
+
+                    <Label 
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        VerticalOptions="End"
+                        FontSize="20"
+                        FontFamily="MS Gothic"
+                        Text="▶ Price per liter ◀"/>
                     <!--Green gas-->
                     <Label
-                    Grid.Column="1"
-                    Grid.Row="1"
-                    Text="Price per liter of green gas" />
+                        VerticalOptions="End"
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Text="Green gas" />
                     <Entry 
-                    Grid.Column="1"
-                    Grid.Row="1"
-                    Keyboard="Numeric" 
-                    Text="{Binding GasStationGreenPrice}" >
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Keyboard="Numeric" 
+                        Text="{Binding GasStationGreenPrice}" >
                         <Entry.Triggers>
                             <EventTrigger 
-                            Event="TextChanged">
+                                Event="TextChanged">
                                 <triggers:PriceTrigger />
                             </EventTrigger>
                         </Entry.Triggers>
                     </Entry>
                     <Stepper
-                    Grid.Column="1"
-                    Grid.Row="1"
-                    Increment="1"
-                    Minimum="0"
-                    Maximum="1000"
-                    Value="{Binding GasStationGreenPrice}"/>
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        BackgroundColor="#656396"
+                        Increment="1"
+                        Minimum="0"
+                        Maximum="1000"
+                        Value="{Binding GasStationGreenPrice}"/>
                     <!--Red gas-->
                     <Label
-                    Grid.Column="2"
-                    Grid.Row="1"
-                    Text="Price per liter of red gas" />
+                        VerticalOptions="End"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Text="Red gas" />
                     <Entry
-                    Grid.Column="2"
-                    Grid.Row="1"
-                    Keyboard="Numeric" 
-                    Text="{Binding GasStationRedPrice}" >
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Keyboard="Numeric" 
+                        Text="{Binding GasStationRedPrice}" >
                         <Entry.Triggers>
                             <EventTrigger 
-                            Event="TextChanged">
+                                Event="TextChanged">
                                 <triggers:PriceTrigger />
                             </EventTrigger>
                         </Entry.Triggers>
                     </Entry>
                     <Stepper
-                    Grid.Column="2"
-                    Grid.Row="1"
-                    Increment="1"
-                    Minimum="0"
-                    Maximum="1000"
-                    Value="{Binding GasStationRedPrice}"/>
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        Increment="1"
+                        Minimum="0"
+                        Maximum="1000"
+                        BackgroundColor="#656396"
+                        Value="{Binding GasStationRedPrice}"/>
                     <!--Diesel gas-->
                     <Label
-                    Grid.Column="3"
-                    Grid.Row="1"
-                    Text="Price per liter of diesel" />
+                        VerticalOptions="End"
+                        Grid.Column="2"
+                        Grid.Row="1"
+                        Text="Diesel" />
                     <Entry 
-                    Grid.Column="3"
-                    Grid.Row="1"
-                    Keyboard="Numeric" 
-                    Text="{Binding GasStationDieselPrice}" >
+                        Grid.Column="2"
+                        Grid.Row="2"
+                        Keyboard="Numeric" 
+                        Text="{Binding GasStationDieselPrice}" >
                         <Entry.Triggers>
                             <EventTrigger 
-                            Event="TextChanged">
+                                Event="TextChanged">
                                 <triggers:PriceTrigger />
                             </EventTrigger>
                         </Entry.Triggers>
                     </Entry>
                     <Stepper
-                    Grid.Column="3"
-                    Grid.Row="1"
-                    Increment="1"
-                    Minimum="0"
-                    Maximum="1000"
-                    Value="{Binding GasStationDieselPrice}"/>
+                        Grid.Column="2"
+                        Grid.Row="3"
+                        Increment="1"
+                        Minimum="0"
+                        Maximum="1000"
+                        BackgroundColor="#656396"
+                        Value="{Binding GasStationDieselPrice}"/>
                 </Grid>
 
-                <Entry
-                    Placeholder="Latitude"
-                    Text="{Binding GasStationLatitude}" />
-                <Entry 
-                    Placeholder="Longitude"
-                    Text="{Binding GasStationLongitude}" />
-                <Button
-                    Text="Obtain coordinates"
-                    Command="{Binding GetLocationCommand}" />
-                <Button
-                    Text="Take picture"
-                    Command="{Binding TakePictureCommand}" />
-                <Button
-                    Text="Select picture"
-                    Command="{Binding SelectPictureCommand}" />
-                <Image
-                    Source="{Binding GasStationPicture, Converter={StaticResource ImageConverter}}"
-                    WidthRequest="100" />
+
+                <Label 
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    VerticalOptions="End"
+                    FontSize="20"
+                    FontFamily="MS Gothic"
+                    Text="▶ Coordinates ◀"
+                    Margin="10"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <!--Coordinates-->
+                    <Button
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        BackgroundColor="#656396"
+                        Text="🧭 Obtain coordinates"
+                        Command="{Binding GetLocationCommand}" />
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Placeholder="Latitude"
+                        Text="{Binding GasStationLatitude}" />
+                    <Entry 
+                        Grid.Column="2"
+                        Grid.Row="0"
+                        Placeholder="Longitude"
+                        Text="{Binding GasStationLongitude}" />
+                </Grid>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -10,47 +10,77 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="New Gas Station" Command="{Binding NewCommand}" />
+        <ToolbarItem Text="➕ New" Command="{Binding NewCommand}" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <CollectionView
-                x:Name="GasStationsList"
-                ItemsSource="{Binding GasStations}"
-                SelectedItem="{Binding GasStationSelected}"
-                SelectionMode="Single">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid
-                            Padding="15">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
-                            <Image
-                            Grid.RowSpan="3"
-                            HeightRequest="120"
-                            Source="{Binding Picture, Converter={StaticResource ImageConverter}}"/>
-                            <Label 
-                            Grid.Column="2"
-                            Grid.Row="1"
-                            FontAttributes="Bold"
-                            Padding="20"
-                            Text="{Binding Company}" />
-                            <Label
-                            Grid.Column="2"
-                            Grid.Row="2"
-                            Padding="20"
-                            Text="{Binding BranchOffice}" />   
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
+        
+        <ListView 
+            SelectedItem="{Binding GasStationSelected}" 
+            x:Name="GasStationsList" 
+            ItemsSource="{Binding GasStations}"
+            SelectionMode="Single">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="0,0,0,10">
+                            <Frame.Content>
+                                <Frame Padding="15,15,15,15"  HeightRequest="130" WidthRequest="50" OutlineColor='#716DB8'>
+                                    <Frame.Content>
+                                        <StackLayout Padding="20,0,0,0"  Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                            <Grid WidthRequest="100">
+                                                <Image
+                                                    HeightRequest="120"
+                                                    Source="{Binding Picture, Converter={StaticResource ImageConverter}}"/>
+                                            </Grid>
+                                            <Grid Padding="25">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="150"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="30"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <Label 
+                                                    Grid.Column="0" 
+                                                    Grid.Row="0" 
+                                                    FontSize="20"
+                                                    FontFamily="MS Gothic"
+                                                    FontAttributes="Bold">
+                                                    Company
+                                                </Label>
+                                                <Label 
+                                                    FontSize="15"
+                                                    FontFamily="MS Gothic"
+                                                    Text="{Binding Company}" 
+                                                    TextColor="White"
+                                                    Grid.Column="0"
+                                                    Grid.Row="1"/>
+                                                <Label 
+                                                    FontSize="20"
+                                                    FontFamily="MS Gothic"
+                                                    Grid.Column="1" 
+                                                    Grid.Row="0" 
+                                                    FontAttributes="Bold">
+                                                    Branch Office
+                                                </Label>
+                                                <Label
+                                                    FontSize="15"
+                                                    FontFamily="MS Gothic"
+                                                    Text="{Binding BranchOffice}"
+                                                    TextColor="White" 
+                                                    Grid.Column="1"
+                                                    Grid.Row="1" />
+                                            </Grid>
+                                        </StackLayout>
+                                    </Frame.Content>
+                                </Frame>
+                            </Frame.Content>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </ContentPage.Content>
 </ContentPage>

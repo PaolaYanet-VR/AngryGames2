@@ -11,7 +11,7 @@ namespace AppGas.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value == null || string.IsNullOrEmpty(value.ToString())) return null;
+            if (value == null || string.IsNullOrEmpty(value.ToString())) return "notFound.jpg";
 
             return new ImageService().ConvertImageFromBase64ToImageSource(value.ToString());
         }
