@@ -21,6 +21,8 @@ namespace AppGas.UWP
         {
             this.InitializeComponent();
 
+            Xamarin.FormsMaps.Init("Am9VqejuClqYtyVEJJggxns0C_sO61gP7IQkkXvNQjmuuRu6oaMrXyY1hLvis_HR");
+
             LoadApplication(new AppGas.App());
         }
     }

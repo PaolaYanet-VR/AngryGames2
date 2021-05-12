@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGas.Views.GasStationsListView"
              xmlns:converters="clr-namespace:AppGas.Converters"
-             Title="AppGas">
+             Title="Gas Stations">
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:ImageConverter x:Key="ImageConverter" />
@@ -17,33 +17,35 @@
             <CollectionView
                 x:Name="GasStationsList"
                 ItemsSource="{Binding GasStations}"
-                SelectionChangedCommand="{Binding SelectCommand}"
                 SelectedItem="{Binding GasStationSelected}"
                 SelectionMode="Single">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid>
+                        <Grid
+                            Padding="15">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Image
                             Grid.RowSpan="3"
-                            HeightRequest="50"
+                            HeightRequest="120"
                             Source="{Binding Picture, Converter={StaticResource ImageConverter}}"/>
                             <Label 
                             Grid.Column="2"
                             Grid.Row="1"
                             FontAttributes="Bold"
+                            Padding="20"
                             Text="{Binding Company}" />
                             <Label
                             Grid.Column="2"
                             Grid.Row="2"
+                            Padding="20"
                             Text="{Binding BranchOffice}" />   
                         </Grid>
                     </DataTemplate>

@@ -31,61 +31,90 @@
                     Text="Branch Office" />
                 <Entry 
                     Text="{Binding GasStationBranchOffice}" />
-                
-                <Label
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <!--Green gas-->
+                    <Label
+                    Grid.Column="1"
+                    Grid.Row="1"
                     Text="Price per liter of green gas" />
-                <Entry 
+                    <Entry 
+                    Grid.Column="1"
+                    Grid.Row="1"
                     Keyboard="Numeric" 
                     Text="{Binding GasStationGreenPrice}" >
-                    <Entry.Triggers>
-                        <EventTrigger 
+                        <Entry.Triggers>
+                            <EventTrigger 
                             Event="TextChanged">
-                            <triggers:PriceTrigger />
-                        </EventTrigger>
-                    </Entry.Triggers>
-                </Entry>
-                <Stepper
+                                <triggers:PriceTrigger />
+                            </EventTrigger>
+                        </Entry.Triggers>
+                    </Entry>
+                    <Stepper
+                    Grid.Column="1"
+                    Grid.Row="1"
                     Increment="1"
                     Minimum="0"
                     Maximum="1000"
                     Value="{Binding GasStationGreenPrice}"/>
-                
-                <Label
+                    <!--Red gas-->
+                    <Label
+                    Grid.Column="2"
+                    Grid.Row="1"
                     Text="Price per liter of red gas" />
-                <Entry 
+                    <Entry
+                    Grid.Column="2"
+                    Grid.Row="1"
                     Keyboard="Numeric" 
                     Text="{Binding GasStationRedPrice}" >
-                    <Entry.Triggers>
-                        <EventTrigger 
+                        <Entry.Triggers>
+                            <EventTrigger 
                             Event="TextChanged">
-                            <triggers:PriceTrigger />
-                        </EventTrigger>
-                    </Entry.Triggers>
-                </Entry>
-                <Stepper
+                                <triggers:PriceTrigger />
+                            </EventTrigger>
+                        </Entry.Triggers>
+                    </Entry>
+                    <Stepper
+                    Grid.Column="2"
+                    Grid.Row="1"
                     Increment="1"
                     Minimum="0"
                     Maximum="1000"
                     Value="{Binding GasStationRedPrice}"/>
-                
-                <Label
+                    <!--Diesel gas-->
+                    <Label
+                    Grid.Column="3"
+                    Grid.Row="1"
                     Text="Price per liter of diesel" />
-                <Entry 
+                    <Entry 
+                    Grid.Column="3"
+                    Grid.Row="1"
                     Keyboard="Numeric" 
                     Text="{Binding GasStationDieselPrice}" >
-                    <Entry.Triggers>
-                        <EventTrigger 
+                        <Entry.Triggers>
+                            <EventTrigger 
                             Event="TextChanged">
-                            <triggers:PriceTrigger />
-                        </EventTrigger>
-                    </Entry.Triggers>
-                </Entry>
-                <Stepper
+                                <triggers:PriceTrigger />
+                            </EventTrigger>
+                        </Entry.Triggers>
+                    </Entry>
+                    <Stepper
+                    Grid.Column="3"
+                    Grid.Row="1"
                     Increment="1"
                     Minimum="0"
                     Maximum="1000"
                     Value="{Binding GasStationDieselPrice}"/>
-                
+                </Grid>
+
                 <Entry
                     Placeholder="Latitude"
                     Text="{Binding GasStationLatitude}" />

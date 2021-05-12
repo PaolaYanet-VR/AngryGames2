@@ -41,8 +41,8 @@ namespace AppGas.Views
                         Type = PinType.Place,
                         Label = gasStationSelected.BranchOffice,
                         Position = new Position(
-                        gasStationSelected.Latitude,
-                        gasStationSelected.Longitude
+                            gasStationSelected.Latitude,
+                            gasStationSelected.Longitude
                         )
                     }
                 );

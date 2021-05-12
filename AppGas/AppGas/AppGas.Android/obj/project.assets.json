@@ -1122,7 +1122,7 @@
           "lib/monoandroid90/Xamarin.GooglePlayServices.Base.dll": {}
         },
         "build": {
-          "build/MonoAndroid90/_._": {}
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Base.targets": {}
         }
       },
       "Xamarin.GooglePlayServices.Basement/117.1.0": {
@@ -1143,7 +1143,7 @@
           "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.dll": {}
         },
         "build": {
-          "build/MonoAndroid90/_._": {}
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Basement.targets": {}
         }
       },
       "Xamarin.GooglePlayServices.Maps/117.0.0": {
@@ -1164,7 +1164,7 @@
           "lib/monoandroid90/Xamarin.GooglePlayServices.Maps.dll": {}
         },
         "build": {
-          "build/MonoAndroid90/_._": {}
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Maps.targets": {}
         }
       },
       "Xamarin.GooglePlayServices.Tasks/117.0.0": {
@@ -1183,7 +1183,7 @@
           "lib/monoandroid90/Xamarin.GooglePlayServices.Tasks.dll": {}
         },
         "build": {
-          "build/MonoAndroid90/_._": {}
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
       "AppGas/1.0.0": {
@@ -2652,6 +2652,7 @@
       "AppGas >= 1.0.0",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012",
+      "Xamarin.Forms.Maps >= 5.0.0.2012",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
@@ -2705,6 +2706,10 @@
             "version": "[1.6.1, )"
           },
           "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2012, )"
+          },
+          "Xamarin.Forms.Maps": {
             "target": "Package",
             "version": "[5.0.0.2012, )"
           },

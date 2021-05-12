@@ -10216,6 +10216,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012",
+      "Xamarin.Forms.Maps >= 5.0.0.2012",
       "sqlite-net-pcl >= 1.7.335"
     ]
   },
@@ -10275,6 +10276,10 @@
             "version": "[1.6.1, )"
           },
           "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2012, )"
+          },
+          "Xamarin.Forms.Maps": {
             "target": "Package",
             "version": "[5.0.0.2012, )"
           },

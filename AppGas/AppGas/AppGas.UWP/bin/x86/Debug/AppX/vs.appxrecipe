@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-05-11T18:38:20.442</Modified>
+      <Modified>2021-05-11T22:49:37.372</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\AppGas.UWP.exe">
       <PackagePath>entrypoint\AppGas.UWP.exe</PackagePath>
-      <Modified>2021-05-11T18:38:19.695</Modified>
+      <Modified>2021-05-11T22:49:36.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\15-dk0007la\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -104,7 +104,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas\bin\Debug\netstandard2.0\AppGas.dll">
       <PackagePath>AppGas.dll</PackagePath>
-      <Modified>2021-05-11T18:30:43.376</Modified>
+      <Modified>2021-05-12T03:12:42.639</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\15-dk0007la\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -255,7 +255,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\pin.png">
       <PackagePath>pin.png</PackagePath>
-      <Modified>2021-05-11T16:31:34.959</Modified>
+      <Modified>2021-05-11T22:23:39.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -263,19 +263,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\AppGas.UWP.xr.xml">
       <PackagePath>AppGas.UWP.xr.xml</PackagePath>
-      <Modified>2021-05-11T16:37:36.357</Modified>
+      <Modified>2021-05-11T22:44:34.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-05-11T18:38:19.631</Modified>
+      <Modified>2021-05-11T22:49:36.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-05-11T18:38:19.631</Modified>
+      <Modified>2021-05-11T22:49:36.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\MapWindow.xbf">
       <PackagePath>MapWindow.xbf</PackagePath>
-      <Modified>2021-05-11T18:38:19.631</Modified>
+      <Modified>2021-05-11T22:49:36.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -291,11 +291,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-05-11T17:37:48.909</Modified>
+      <Modified>2021-05-11T22:23:45.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\ProyectoXamarinForms\AppGas\AppGas\AppGas.UWP\bin\x86\Debug\Core\AppGas.UWP.exe">
       <PackagePath>AppGas.UWP.exe</PackagePath>
-      <Modified>2021-05-11T18:38:20.438</Modified>
+      <Modified>2021-05-11T22:49:37.368</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

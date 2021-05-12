@@ -11,28 +11,33 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="80" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
         <Image x:ConnectionId='2' 
             x:Name="WindowPicture"
-            Width="100" />
-        <StackPanel
+            Width="200"
+            Height="200"/>
+        <StackPanel 
             Grid.Row="1"
             Orientation="Horizontal"
             Background="White"
-            Opacity=".5"
-            Padding="20, 0, 20, 0">
+            Opacity=".85"
+            Padding="20, 10, 20, 10">
             <StackPanel
-                Margin="20, 10, 20, 0">
+                Margin="75, 10, 20, 10" >
                 <TextBlock x:ConnectionId='3'
                     x:Name="WindowBranchOffice"
-                    FontFamily="Bold"
-                    d:Text="Branch Office"/>
+                    FontWeight="Bold" 
+                    d:Text="Branch Office"
+                    Foreground="#656396"
+                    HorizontalAlignment="Center"/>
                 <TextBlock x:ConnectionId='4'
-                    x:Name="WindowCompany"
-                    d:Text="Company"/>
+                    x:Name="WindowCompany" 
+                    d:Text="Company"
+                    Foreground="#656396"
+                    HorizontalAlignment="Center"/>
             </StackPanel>
         </StackPanel>
     </Grid>
